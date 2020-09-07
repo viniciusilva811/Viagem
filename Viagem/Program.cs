@@ -26,8 +26,8 @@ namespace Viagem
                 "Boa noite pessoal",
                 "Nos vemos depois",
                 5);
-            in1.AdicionarComentario(com3);
-            in1.AdicionarComentario(com4);
+            in2.AdicionarComentario(com3);
+            in2.AdicionarComentario(com4);
 
             Console.WriteLine(in1);
             Console.WriteLine(in2);

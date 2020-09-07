@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
+
 namespace Viagem.Entities
 {
     class Info
@@ -29,6 +30,24 @@ namespace Viagem.Entities
         public void RemoverComentario(Comentario comentario) 
         {
             Comentarios.Remove(comentario);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(Titulo);
+            sb.Append(Curtida);
+            sb.Append(" Curtida - ");
+            sb.AppendLine(Momento.ToString("DIA/MES/ANO HORA:minuto:segundo "));
+            sb.AppendLine(Conteudo);
+            sb.AppendLine("Comentarios: ");
+
+            foreach (Comentario c in Comentarios)
+            {
+                sb.AppendLine(c.Texto);
+            }
+
+            return sb.ToString();
         }
     }
 }
