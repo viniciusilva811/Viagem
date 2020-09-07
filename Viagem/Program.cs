@@ -23,12 +23,14 @@ namespace Viagem
 
             Info in2 = new Info(
                 DateTime.Parse("29/06/2020 19:50:10"),
-                "Viajando para França",
-                "Eu gostaria de visitar esse país!",
-                12);
+                "Boa noite pessoal",
+                "Nos vemos depois",
+                5);
             in1.AdicionarComentario(com3);
             in1.AdicionarComentario(com4);
 
+            Console.WriteLine(in1);
+            Console.WriteLine(in2);
         }
     }
 }
